@@ -47,8 +47,10 @@ public class ListTest {
         List<String> list7 = new ArrayList<String>();
         list7.add("big");
         list7.add("freak");
+        List<String> list8 = new ArrayList<String>();
         assertEquals(list3, ListExamples.merge(list1, list2));
         assertEquals(list7, ListExamples.merge(list5, list6));
+        assertEquals(list2, ListExamples.merge(list2, list8));
     }
     
 }
