@@ -20,6 +20,7 @@ public class ListTest {
         list1.add("pig");
         list2.add("big");
         list2.add("cop");
+        list2.add("food");
 
         list3.add("big");
         list3.add("cat");
@@ -27,6 +28,7 @@ public class ListTest {
         list3.add("cow");
         list3.add("dog");
         list3.add("fish");
+        list3.add("food"); 
         list3.add("pig");
         list4.add("cat");
     }
@@ -38,7 +40,15 @@ public class ListTest {
 
     @Test
     public void testMerge(){
+        List<String> list5 = new ArrayList<String>();
+        list5.add("big");
+        List<String> list6 = new ArrayList<String>();
+        list6.add("freak");
+        List<String> list7 = new ArrayList<String>();
+        list7.add("big");
+        list7.add("freak");
         assertEquals(list3, ListExamples.merge(list1, list2));
+        assertEquals(list7, ListExamples.merge(list5, list6));
     }
     
 }
